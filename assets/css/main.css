@@ -684,7 +684,7 @@ header .heading{
   color: #fff;
   background-color: #000;
 }
-.customer-login a{
+.customer-login a, .customer-register a{
   color: var(--mainColor);
 }
 input:focus {

@@ -158,39 +158,44 @@
     </header>
 
     <section class="breadcrumb text-center d-flex flex-column g-3 justify-content-center align-items-center">
-        <h2 class="font-main text-capitalize">Account</h2>
+        <h2 class="font-main text-capitalize">Create Account</h2>
         <div class="inline-container">
             <a href="index.html" class="breadcrumb-link text-decoration-none font-sub">Home</a>
-            <p class="font-sub">/ Account</p>
+            <p class="font-sub">/ Create Account</p>
         </div>
     </section>
 
-    <section class="customer-login py-4">
+    <section class="customer-register py-4">
         <div class="container">
             <div class="row">
-                <div class="login col-md-6 mb-4">
+                <div class="customer-create-account col-md-6 mb-4">
                     <div class="border rounded p-4 h-100">
-                        <h2 class="font-main fw-bold">Login</h2>
-                        <p class="font-sub">Please login below account details</p>
-                        <div class="customer-email mb-3">
-                            <label for="exampleFormControlInput1" class="form-label font-sub">Email address</label>
-                            <input type="email" class="form-control" placeholder="name@example.com">
+                        <h2 class="font-main fw-bold">Create an Account</h2>
+                        <p class="font-sub">Please register below account details</p>
+                        <div class="customer-first-name mb-3">
+                            <input type="text" class="form-control" placeholder="First Name">
                         </div>
-                        <div class="customer-password mb-3">
-                            <label for="inputPassword5" class="form-label font-sub">Password</label>
-                            <input type="password" class="form-control">
+                        <div class="customer-last-name mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="customer-last-name mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div id="passwordHelpBlock" class="form-text mb-3">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not
+                            contain spaces, special characters, or emoji.
                         </div>
                         <div class="form-button mb-3">
-                            <button class="btn account-btn font-sub" type="submit">Sign In</button>
+                            <button class="btn account-btn font-sub" type="submit">Create</button>
                         </div>
-                        <a href="#" class="text-decoration-none text-center font-sub">Forgot your password?</a>
                     </div>
                 </div>
                 <div class="col-md-6 creat-acc d-flex flex-column justify-content-center gap-5">
                     <div class="create-account text-center">
-                        <h6 class="font-sub">Don't have an account?</h6>
+                        <h6 class="font-sub">Already have an account?</h6>
                         <div class="account-action">
-                            <a href="register.html" class="btn account-btn text-white font-sub" id="customer_register_link">Create account</a>
+                            <a href="account.html" class="btn account-btn text-white font-sub">Log In</a>
                         </div>
                     </div>
                     <div class="term-privacy font-sub">
@@ -200,7 +205,8 @@
                         </p>
                         <p class="privacy-policy">
                             <span>Your privacy and security are important to us. For more information on how we use your
-                                data read our <a href="#" target="_blank" class="text-decoration-none">privacy policy</a></span>
+                                data read our <a href="#" target="_blank" class="text-decoration-none">privacy
+                                    policy</a></span>
                         </p>
                     </div>
                 </div>
