@@ -669,3 +669,25 @@ header .heading{
   background-color: #000;
   color: #fff;
 }
+.forgot-password{
+  color: var(--mainColor);
+}
+.account-btn{
+  color: #fff;
+  background-color: var(--mainColor);
+  border-radius: 0cm;
+  padding: 10px 40px;
+  max-width: 200px;
+  transition: background-color 0.4s;
+}
+.account-btn:hover{
+  color: #fff;
+  background-color: #000;
+}
+.customer-login a{
+  color: var(--mainColor);
+}
+input:focus {
+  box-shadow: none !important;
+  border-color: var(--mainColor) !important;
+}
