@@ -269,6 +269,11 @@ header .heading{
       width: 50%;
     }
 }
+.video-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
 .video-bg{
   padding: 250px 0;
   background-image: url(../img/video_bg.webp);
@@ -282,11 +287,49 @@ header .heading{
   background-color: var(--mainColor);
   width: 100px;
   height: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.4s;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+.ring-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  animation: pulse 2.5s ease-out infinite;
+  z-index: 1;
+}
+.ring-2 {
+  animation-delay: 0.6s;
+}
+.ring-3 {
+  animation-delay: 1.2s;
+}
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
 }
 .video-icon:hover{
   cursor: pointer;
