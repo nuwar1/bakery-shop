@@ -496,7 +496,7 @@ header .heading{
 .page-header{
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 .breadcrumb{
   padding: 100px 0;
@@ -733,4 +733,81 @@ header .heading{
 input:focus {
   box-shadow: none !important;
   border-color: var(--mainColor) !important;
+}
+.shop-buttons{
+  color: #fff;
+  background-color: var(--mainColor);
+  border-radius: 0cm;
+  padding: 10px 20px;
+  max-width: 200px;
+  transition: background-color 0.4s;
+}
+.shop-buttons:hover{
+  background-color: #000;
+  color: #fff;
+}
+.in-stock{
+  color: green;
+}
+.seperator-line {
+  border-top: 1px solid #000;
+  width: 100%;
+}
+.add-remove-btn{
+  background-color: #a75730;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  width: 30px;
+  border-radius: 0;
+  color: #fff;
+  transition: background-color 0.4s;
+}
+.add-remove-btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+.enquiry a{
+  color: #000;
+  transition: color 0.4s;
+}
+.enquiry a:hover{
+  color: var(--mainColor);
+}
+.catagory a{
+  color: #000;
+  transition: color 0.4s;
+}
+.catagory h5, .new-arrivals h5{
+  font-family: var(--mainFont); 
+  color: var(--mainColor); 
+}
+.new-arrivals span{
+  font-size: small;
+}
+.new-arrivals a{
+  color: #000;
+  transition: color 0.4s;
+}
+.new-arrivals a:hover{
+  color: var(--mainColor);
+}
+.catagory a:hover{
+  color: var(--mainColor);
+}
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  background-color: var(--mainColor);
+}
+.nav-tabs .nav-link.active {
+  background-color: #000;
+  color: #fff;
+}
+@media screen and (max-width: 960px){
+  .right-side{
+    display: none;
+  }
 }
